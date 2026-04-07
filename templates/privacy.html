@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .privacy-section {
+        padding: 4rem 2rem;
+        background: var(--paper);
+    }
+
+    .privacy-inner {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .privacy-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 2.5rem);
+        color: var(--ink);
+        margin-bottom: 0.5rem;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+    }
+
+    .privacy-updated {
+        font-size: 0.85rem;
+        color: var(--ink-muted);
+        margin-bottom: 3rem;
+        font-weight: 500;
+    }
+
+    .privacy-content h2 {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        color: var(--ink);
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .privacy-content h2:first-child {
+        margin-top: 0;
+    }
+
+    .privacy-content p {
+        color: var(--ink-muted);
+        line-height: 1.8;
+        margin-bottom: 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .privacy-content ul {
+        margin-left: 1.5rem;
+        margin-bottom: 1.25rem;
+        color: var(--ink-muted);
+        line-height: 1.8;
+    }
+
+    .privacy-content li {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="privacy-section">
+    <div class="privacy-inner">
+        <h1 class="privacy-title">Privacy Policy</h1>
+        <p class="privacy-updated">Last updated: April 2026</p>
+
+        <div class="privacy-content">
+            <h2>Data We Collect</h2>
+            <p>When you use Spendly, we collect the following information:</p>
+            <ul>
+                <li><strong>Account Information:</strong> Your name, email address, and password when you create an account.</li>
+                <li><strong>Expense Data:</strong> All expense records you log, including amounts, categories, dates, and descriptions.</li>
+                <li><strong>Usage Information:</strong> Information about how you interact with the Service, including pages visited and features used.</li>
+                <li><strong>Device Information:</strong> Device type, browser type, and IP address.</li>
+            </ul>
+
+            <h2>How We Use Your Data</h2>
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li>To provide and maintain the Service</li>
+                <li>To process your transactions and send related information</li>
+                <li>To send periodic emails regarding updates, features, or other related information</li>
+                <li>To monitor and analyze usage patterns to improve the Service</li>
+                <li>To detect, prevent, and address fraud and other illegal activity</li>
+            </ul>
+
+            <h2>Data Storage</h2>
+            <p>Your data is stored securely on our servers and is protected by encryption. We retain your expense data for as long as your account is active. If you delete your account, we will securely delete all associated data within 30 days.</p>
+            <p>We employ industry-standard security measures to protect your information against unauthorized access, alteration, disclosure, or destruction.</p>
+
+            <h2>Third Party Services</h2>
+            <p>Spendly does not share your personal data with third parties for their marketing purposes. However, we may share information with service providers who assist us in operating our website and conducting our business, subject to confidentiality agreements.</p>
+            <p>We may also disclose information when required by law or when we believe in good faith that such disclosure is necessary to comply with legal obligations.</p>
+
+            <h2>Your Rights</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access the personal data we hold about you</li>
+                <li>Correct inaccurate or incomplete data</li>
+                <li>Request deletion of your data</li>
+                <li>Opt-out of marketing communications at any time</li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><strong>Email:</strong> privacy@spendly.app</p>
+            <p><strong>Mailing Address:</strong> Spendly Support Team, Privacy Department</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date above.</p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
