@@ -1,0 +1,212 @@
+/* ================================================================ */
+/* Hero Section Overrides for Landing Page                           */
+/* ================================================================ */
+
+.hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    margin-bottom: 2rem;
+    width: fit-content;
+}
+
+.hero-title {
+    font-size: clamp(2.8rem, 6vw, 3.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+}
+
+.hero-title em {
+    font-style: normal;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--ink-muted);
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.hero-actions .btn-primary:nth-child(2) {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.hero-actions .btn-primary:nth-child(2):hover {
+    background: var(--accent);
+}
+
+.btn-primary {
+    padding: 0.75rem 1.75rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Mock Card Styles */
+.mock-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mock-card-dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red {
+    background: #ef5350;
+}
+
+.dot-orange {
+    background: #ffa726;
+}
+
+.dot-green {
+    background: #66bb6a;
+}
+
+/* Stats Section */
+.mock-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.stat-card {
+    padding: 0;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--ink-muted);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+.stat-value {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    color: var(--ink);
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.stat-change {
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+}
+
+.stat-increase {
+    color: #ef5350;
+}
+
+.stat-positive {
+    color: var(--accent);
+}
+
+/* Categories Section */
+.mock-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.category-bar {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+}
+
+.bar-track {
+    height: 8px;
+    background: var(--border-soft);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.6s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-subtitle {
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mock-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}
